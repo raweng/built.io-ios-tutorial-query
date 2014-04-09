@@ -2,13 +2,16 @@
 //  AppDelegate.m
 //  BuiltQueryDemo
 //
-//  Created by Akshay Mhatre on 11/03/14.
-//  Copyright (c) 2014 raweng. All rights reserved.
-//
+
 
 #import "AppDelegate.h"
 #import "QueryViewController.h"
 #import "QueryConditionsViewController.h"
+
+//*****************************************************************************
+//BuiltQuery class helps to retrieve objects.
+//You can retrieve objects by specifying constraints while querying them.
+//*****************************************************************************
 
 @implementation AppDelegate
 

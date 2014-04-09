@@ -2,9 +2,7 @@
 //  QueryViewController.h
 //  BuiltQueryDemo
 //
-//  Created by Akshay Mhatre on 14/03/14.
-//  Copyright (c) 2014 raweng. All rights reserved.
-//
+
 
 #import <BuiltIO/BuiltIO.h>
 
