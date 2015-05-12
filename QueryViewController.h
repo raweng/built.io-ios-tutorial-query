@@ -5,7 +5,7 @@
 
 
 #import <BuiltIO/BuiltIO.h>
-
+#import <BuiltIO/BuiltUITableViewController.h>
 @interface QueryViewController : BuiltUITableViewController
 
 - (void)orderByAscendingPriority;

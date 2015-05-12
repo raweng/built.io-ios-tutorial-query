@@ -11,13 +11,14 @@
 
 @implementation QueryViewController
 
-- (id)initWithStyle:(UITableViewStyle)style{
-    self = [super initWithStyle:style];
+- (id)initWithStyle:(UITableViewStyle)style withBuiltClass:(BuiltClass *)builtClass{
+    self = [super initWithStyle:style withBuiltClass:builtClass];
     if (self) {
         // Custom initialization
+        
         self.enablePullToRefresh = YES;
         self.fetchLimit = 99;
-        self.title = @"Result";        
+        self.title = @"Result";
     }
     return self;
 }
@@ -25,6 +26,11 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self refresh];
+}
+
+-(void)viewDidLoad {
+    [super viewDidLoad];
+
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath builtObject:(BuiltObject *)builtObject{
@@ -125,7 +131,6 @@
 - (void)skipObjects{
     [self.builtQuery skipObjects:@2];
 }
-
 
 - (void)didReceiveMemoryWarning
 {

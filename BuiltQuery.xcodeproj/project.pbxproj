@@ -28,6 +28,12 @@
 		BAA916DB18EADC5B008E55D5 /* BuiltIO.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BAA916D918EADC5A008E55D5 /* BuiltIO.bundle */; };
 		BAA916DC18EADC5B008E55D5 /* BuiltIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA916DA18EADC5A008E55D5 /* BuiltIO.framework */; };
 		BAEBAFB918D81870009E2BBF /* QueryConditionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEBAFB818D81870009E2BBF /* QueryConditionsViewController.m */; };
+		FA231AB41A9F31A300434E36 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA231AB31A9F31A300434E36 /* libsqlite3.dylib */; };
+		FA231AB61A9F31B700434E36 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA231AB51A9F31B700434E36 /* libicucore.dylib */; };
+		FA231AB81A9F31BF00434E36 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA231AB71A9F31BF00434E36 /* libc++.dylib */; };
+		FA231ABA1A9F31C600434E36 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA231AB91A9F31C600434E36 /* MobileCoreServices.framework */; };
+		FA231ABC1A9F31CD00434E36 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA231ABB1A9F31CD00434E36 /* CoreData.framework */; };
+		FA231ABE1A9F31D500434E36 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA231ABD1A9F31D500434E36 /* CoreFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +77,12 @@
 		BAA916DA18EADC5A008E55D5 /* BuiltIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BuiltIO.framework; path = "built.io-ios-framework/BuiltIO.framework"; sourceTree = "<group>"; };
 		BAEBAFB718D81870009E2BBF /* QueryConditionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryConditionsViewController.h; sourceTree = SOURCE_ROOT; };
 		BAEBAFB818D81870009E2BBF /* QueryConditionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryConditionsViewController.m; sourceTree = SOURCE_ROOT; };
+		FA231AB31A9F31A300434E36 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		FA231AB51A9F31B700434E36 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		FA231AB71A9F31BF00434E36 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		FA231AB91A9F31C600434E36 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FA231ABB1A9F31CD00434E36 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FA231ABD1A9F31D500434E36 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +97,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA231ABE1A9F31D500434E36 /* CoreFoundation.framework in Frameworks */,
+				FA231ABC1A9F31CD00434E36 /* CoreData.framework in Frameworks */,
+				FA231ABA1A9F31C600434E36 /* MobileCoreServices.framework in Frameworks */,
+				FA231AB81A9F31BF00434E36 /* libc++.dylib in Frameworks */,
+				FA231AB61A9F31B700434E36 /* libicucore.dylib in Frameworks */,
+				FA231AB41A9F31A300434E36 /* libsqlite3.dylib in Frameworks */,
 				BA63707B18CF561D0060FCDC /* SystemConfiguration.framework in Frameworks */,
 				BA63707218CF56130060FCDC /* Accounts.framework in Frameworks */,
 				BA63707318CF56130060FCDC /* CFNetwork.framework in Frameworks */,
@@ -143,6 +161,12 @@
 		BA63702D18CF3F6E0060FCDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA231ABD1A9F31D500434E36 /* CoreFoundation.framework */,
+				FA231ABB1A9F31CD00434E36 /* CoreData.framework */,
+				FA231AB91A9F31C600434E36 /* MobileCoreServices.framework */,
+				FA231AB71A9F31BF00434E36 /* libc++.dylib */,
+				FA231AB51A9F31B700434E36 /* libicucore.dylib */,
+				FA231AB31A9F31A300434E36 /* libsqlite3.dylib */,
 				BAA916D918EADC5A008E55D5 /* BuiltIO.bundle */,
 				BAA916DA18EADC5A008E55D5 /* BuiltIO.framework */,
 				BA63707A18CF561D0060FCDC /* SystemConfiguration.framework */,
@@ -487,6 +511,7 @@
 				237784B31A232ED100E055D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA63702618CF3F6E0060FCDC /* Build configuration list for PBXProject "BuiltQuery" */ = {
 			isa = XCConfigurationList;

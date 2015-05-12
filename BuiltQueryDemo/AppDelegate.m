@@ -19,10 +19,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    [Built initializeWithApiKey:@"bltab290b02890b2dea" andUid:@"built_query_demo"];
-    
-
-//    QueryViewController *result = [[QueryViewController alloc]initWithStyle:UITableViewStylePlain withClassUID:@"task"];
+    self.builtApplication = [Built applicationWithAPIKey:@"bltab290b02890b2dea"];
     
     QueryConditionsViewController *condtions = [[QueryConditionsViewController alloc]init];
     
@@ -35,8 +32,13 @@
     [self.window setRootViewController:nvc];
     
     self.window.backgroundColor = [UIColor whiteColor];
+    
     [self.window makeKeyAndVisible];
     return YES;    
+}
+
++(AppDelegate *)sharedInstance {
+    return (AppDelegate*)[UIApplication sharedApplication].delegate;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
